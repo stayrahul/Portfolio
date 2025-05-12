@@ -7,11 +7,11 @@ const ThankYouSection: React.FC = () => {
         Thank You <span className="text-yellow-500 dark:text-yellow-400">for Visiting! 🫰</span>
       </h1>
 
-      <div className="mt-8 flex justify-center items-center w-full">
+      <div className="mt-8 mb-10 flex justify-center items-center w-full">
         <div className="flex flex-col gap-4 py-6 px-6 md:flex-row md:items-center md:justify-between 
                         bg-gray-100 dark:bg-slate-800 rounded-xl shadow-lg 
                         w-full max-w-3xl transition-colors duration-300">
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-center">
             <h2 className="text-xl font-bold text-black dark:text-white">
               I truly appreciate you taking the time to explore my website.
             </h2>

@@ -6,18 +6,18 @@ import { EXTRA_LINKS, OWNER_NAME } from "@/constants";
 const Footer = () => {
   return (
   
-    <footer className="mb-10 px-4 text-center text-gray-500">
+    <footer className="mb-6 px-4 text-center text-gray-500">
        <hr className="border-t border-gray-300 dark:border-white/20 mb-4" />
 
-      <small className="mb-2 block text-xs">
+      <small className="mb-2 block text-md">
         {/* Display the copyright notice with dynamic years and owner name. */}
-        &copy; {new Date().getFullYear()} <b>{OWNER_NAME.split(" ")[0]}</b> |
+        &copy; {new Date().getFullYear()} <b>{OWNER_NAME.split(" ")[0]}♡Pidii</b> |
         All rights reserved |{" "}
         <Link
            href="tel:+9779822228722"
            className="font-semibold"
            target="_blank"
-           rel="noreferrer noopener"
+           rel="noreferrer noopener" 
            title="Call Me"
            >
            Call Me

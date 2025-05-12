@@ -8,18 +8,12 @@ import { FaPaperPlane } from "react-icons/fa";
 
 import { EXTRA_LINKS } from "@/constants";
 import { useSectionInView } from "@/lib/hooks";
-
 import SectionHeading from "./section-heading";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact");
   const formRef = useRef<HTMLFormElement>(null);
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e: FormEvent) => {
@@ -29,7 +23,6 @@ const Contact = () => {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-
     const res = await fetch("https://formspree.io/f/xovdkqad", {
       method: "POST",
       headers: {
@@ -52,75 +45,79 @@ const Contact = () => {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-16 sm:mb-20 text-center w-[min(100%,38rem)]"  // Reduced top margin
+      className="px-6 sm:px-12 py-24 mb-28 text-center"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <SectionHeading>My contact</SectionHeading>
+      <SectionHeading>Contact Me</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at my{" "}
-        <Link className="underline" href={`mailto:${EXTRA_LINKS.email}`}>
-          e-mail
+      <p className="text-xl sm:text-2xl text-gray-700 dark:text-white/80 max-w-2xl mx-auto mt-4 mb-12">
+        Feel free to email me at{" "}
+        <Link className="underline font-semibold" href={`mailto:${EXTRA_LINKS.email}`}>
+          email
         </Link>{" "}
-        or through this form.
+        or fill out the form below.
       </p>
 
-      <form
-        className="mt-10 flex flex-col dark:text-black"
-        onSubmit={handleSubmit}
-        ref={formRef}
-      >
-        <input
-          type="text"
-          name="name"
-          value={form.name}
-          onChange={handleChange}
-          placeholder="Your name"
-          className="h-14 rounded-lg px-4 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          required
-          maxLength={200}
-        />
-
-        <input
-          type="email"
-          name="email"
-          value={form.email}
-          onChange={handleChange}
-          placeholder="Your email"
-          className="h-14 rounded-lg my-4 px-4 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          required
-          maxLength={100}
-        />
-
-        <textarea
-          name="message"
-          value={form.message}
-          onChange={handleChange}
-          placeholder="Your message"
-          className="h-52 rounded-lg mb-4 borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          required
-          maxLength={500}
-        />
-        <br></br>
-
-        <button
-          type="submit"
-          className="group flex self-center items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950 dark:bg-white dark:bg-opacity-10"
+      <div className="bg-white dark:bg-white/5 rounded-2xl shadow-2xl border border-gray-200 dark:border-white/10 max-w-2xl mx-auto p-6 sm:p-16">
+        <form
+          className="flex flex-col gap-6 dark:text-black text-lg"
+          onSubmit={handleSubmit}
+          ref={formRef}
         >
-          Submit{" "}
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-        </button>
-        <br></br>
+          <input
+            type="text"
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+            placeholder="Your name"
+            className="h-16 px-6 rounded-2xl text-lg border border-gray-300 dark:border-white/20 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 outline-none focus:ring-4 focus:ring-cyan-500 transition"
+            required
+          />
 
-        {submitted && (
-          <p className="text-green-400 text-center pt-2 animate-bounce">
-            Thank you! Your message has been submitted 🚀
-          </p>
-        )}
-      </form>
+          <input
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            placeholder="Your email"
+            className="h-16 px-6 rounded-2xl text-lg border border-gray-300 dark:border-white/20 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 outline-none focus:ring-4 focus:ring-cyan-500 transition"
+            required
+          />
+
+          <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+            placeholder="Your message"
+            className="h-72 px-6 py-4 rounded-2xl text-lg border border-gray-300 dark:border-white/20 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 outline-none focus:ring-4 focus:ring-cyan-500 transition"
+            required
+          />
+
+          {/* Submit button: black in light mode, cyan in dark mode */}
+          <button
+            type="submit"
+           className="group mt-6 flex items-center justify-center gap-3 h-16 text-xl px-10 
+            bg-grey-500 text-black font-bold rounded-full
+            hover:bg-grey-600
+            dark:bg-white/10 dark:hover:bg-grey-500
+            dark:text-white
+            transition transform hover:scale-105 active:scale-95"
+
+          >
+            Submit
+            <FaPaperPlane className="text-xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+          </button>
+
+          {submitted && (
+            <p className="text-green-500 text-lg pt-4 animate-bounce text-center">
+              Thank you! Your message has been submitted 🚀
+            </p>
+          )}
+        </form>
+      </div>
     </motion.section>
   );
 };

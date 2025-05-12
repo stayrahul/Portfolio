@@ -8,6 +8,8 @@ import {
   SectionDivider,
   Skills,
 } from "@/components";
+import Devices from "@/components/devices";
+import Gallery from "@/components/Gallery";
 import { Hobbies } from "@/components/Hobbies";
 import { Lang } from "@/components/lang";
 import SocialMediaSection from "@/components/SocialMediaSection";
@@ -26,10 +28,13 @@ export default function Home() {
       {/* The About component provides information about the author or user. */}
       <About />
 
+      {/* The Education component displays educational background information. */}
+      <Education />
+
+      {/* The Lang component displays information about languages. */}
       <Lang />
 
-      {/* The Projects component displays information about projects. */}
-      <Projects />
+      
 
       {/* The Skills component shows the skills of the author or user. */}
       <Skills />
@@ -38,9 +43,14 @@ export default function Home() {
       {/* A Vertical line or divider separating sections on the page. */}
       <Hobbies />
 
-      {/* The Education component displays educational background information. */}
-      <Education />
-      {/* A Vertical line or divider separating sections on the page. */}
+      <Gallery />
+
+      {/* The Projects component displays information about projects. */}
+      <Projects />
+
+      <Devices />
+
+      
 
 
       <SocialMediaSection />

@@ -3,6 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import FloatingChatbot from '@/components/Chatbot';
 
 import { Header, Footer, ThemeSwitch } from "@/components";
 import { EXTRA_LINKS, OWNER_NAME } from "@/constants";
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   title: `${OWNER_NAME.split(" ")[0]} | Portfolio`,
   description: `${
     OWNER_NAME.split(" ")[0]
-  } is a Class 12 Student.`,
+  } Student.`,
   authors: {
     name: OWNER_NAME,
     url: EXTRA_LINKS.github,
@@ -80,6 +81,11 @@ export default function RootLayout({
             {children}
             {/* footer */}
             <Footer />
+
+            {/* floating chatbot */}
+            <aside className="fixed bottom-4 right-4 z-50">
+              <FloatingChatbot />
+            </aside>
 
             {/* toaster */}
             <aside>

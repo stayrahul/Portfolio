@@ -12,8 +12,7 @@ type SectionName =
   | "Home"
   | "About"
   | "Projects"
-  | "Skills"
-  | "Education"
+
   | "Contact";
 
 // Define the type for the ActiveSectionContext

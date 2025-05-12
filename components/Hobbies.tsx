@@ -11,7 +11,7 @@ export const Hobbies = () => {
   ];
 
   return (
-    <section className="py-4 mt-16">
+    <section className="py-4 mb-16 mt-16">
       <h2 className="text-2xl md:text-3xl font-semibold text-center mb-4 text-black dark:text-white">
         Hobbies
       </h2>

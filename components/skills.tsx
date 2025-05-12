@@ -20,10 +20,10 @@ const Skills = () => {
 
   return (
     <section className="py-4">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center text-black dark:text-white">
+      <h2 className="text-2xl md:text-3xl font-semibold text-center mb-4 text-black dark:text-white">
         Skills
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 px-4 sm:px-8">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-6xl mx-auto justify-items-center">
         {skills.map((skill, index) => (
           <div
             key={index}

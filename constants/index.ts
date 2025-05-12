@@ -33,23 +33,7 @@ export const EXTRA_LINKS = {
   email: "rahul7926963@gmail.com",
 } as const;
 
-// Data for education
-export const EDUCATION_DATA = [
-  {
-    id: 1,
-    degree: 'Class 11 — Science',
-    school: 'Capital College and Research Centre, Kathmandu',
-    year: '(2024 - Present)',
-    link: 'https://ccrc.edu.np' // Link to your college
-  },
-  {
-    id: 2,
-    degree: 'Class 9 to Class 10',
-    school: 'Adhunik Rastriya Secondary School, Hetauda',
-    year: '(Completed in 2024)',
-    link: 'https://schooladhunik.edu.np' // Link to your school
-  }
-];
+
 
 // Data for projects
 export const PROJECTS_DATA = [

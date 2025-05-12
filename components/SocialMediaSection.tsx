@@ -50,7 +50,7 @@ const SocialMediaSection = () => {
             target="_blank"
             rel="noreferrer noopener"
             aria-label={item.label}
-            className="w-14 h-14 sm:w-16 sm:h-16 flex justify-center items-center 
+            className="w-24 h-24 sm:w-24 sm:h-24 flex justify-center items-center 
               rounded-full border border-black/20 dark:border-white/20 
               text-black dark:text-white hover:text-cyan-500 dark:hover:text-cyan-400 
               hover:border-cyan-500 dark:hover:border-cyan-400 

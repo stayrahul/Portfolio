@@ -36,8 +36,8 @@ const Intro = () => {
             <Image
               src="/profile.svg"
               alt={`${OWNER_NAME.split(" ")[0]} portrait`}
-              width={220}
-              height={220}
+              width={240}
+              height={240}
               quality={100}
               priority={true}
               className="rounded-full border-4 border-blue-500 shadow-2xl transition-transform duration-500 group-hover:scale-110"
@@ -54,9 +54,9 @@ const Intro = () => {
               delay: 0.1,
               duration: 0.7,
             }}
-            className="absolute text-2xl bottom-0 right-0"
+            className="absolute text-4xl bottom-0 right-0"
           >
-            🫶
+          🫶
           </motion.span>
         </div>
       </div>
@@ -66,6 +66,7 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
+        <br></br>
         <b className="font-bold">Hi, I&apos;m <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-extrabold text-xl md:text-5xl lg:text-6xl">
             Rahul Kushwaha
           </span>.</b>{" "}
