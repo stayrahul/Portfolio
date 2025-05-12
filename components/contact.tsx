@@ -102,7 +102,7 @@ const Contact = () => {
            className="group mt-6 flex items-center justify-center gap-3 h-16 text-xl px-10 
             bg-grey-500 text-black font-bold rounded-full
             hover:bg-grey-600
-            dark:bg-white/10 dark:hover:bg-grey-500
+            dark:bg-white/10 dark:hover:bg-white/10
             dark:text-white
             transition transform hover:scale-105 active:scale-95"
 
