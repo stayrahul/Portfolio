@@ -1,0 +1,83 @@
+{
+  "name": "portfolio",
+  "version": "1.1.0",
+  "private": true,
+  "author": {
+    "name": "Rahul Kushwaha",
+    "email": "rahul7926963@gmail.com",
+    "url": "https://github.com/stayrahul"
+  },
+  "description": "Rahul is Class 12 Student.",
+  "keywords": [
+    "reactjs",
+    "nextjs",
+    "vercel",
+    "react",
+    "portfolio",
+    "portfolio-next",
+    "emailjs",
+    "framer-motion",
+    "react-hot-toast",
+    "react-icons",
+    "react-intersection-observer",
+    "react-vertical-timeline",
+    "tailwindcss",
+    "ui/ux",
+    "js",
+    "javascript",
+    "typescript",
+    "html",
+    "css"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stayrahul/stayrahul.git"
+  },
+  "homepage": "https://github.com/stayrahul/portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/stayrahul/portfolio/issues",
+    "email": "rahul7926963@gmail.com"
+  },
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@types/node": "20.8.6",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3",
+    "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.1",
+    "autoprefixer": "10.4.16",
+    "clsx": "^2.0.0",
+    "eslint": "8.51.0",
+    "framer-motion": "^12.4.0",
+    "next": "15.2.3",
+    "next-pwa": "^5.6.0",
+    "postcss": "8.4.31",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.11.0",
+    "react-intersection-observer": "^9.15.1",
+    "react-vertical-timeline-component": "^3.6.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@types/react-google-recaptcha": "^2.1.9",
+    "@types/react-vertical-timeline-component": "^3.3.5",
+    "eslint-config-next": "^15.3.2"
+  },
+
+
+  "overrides": {
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3"
+  }
+}
