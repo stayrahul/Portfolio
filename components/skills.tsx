@@ -27,7 +27,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="group flex flex-col items-center justify-center w-[250px] h-[100px] p-4 rounded-xl 
+            className="group flex flex-col items-center justify-center w-[190px] min-h-[100px] p-4 rounded-xl 
               border border-black/20 dark:border-white/20
               hover:border-cyan-400 hover:shadow-cyan-400 hover:shadow-lg 
               hover:-translate-y-1 hover:scale-105 

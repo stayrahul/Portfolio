@@ -11,11 +11,11 @@ export const Lang = () => {
       <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6 text-black dark:text-white">
         Languages
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-6xl mx-auto justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-6xl mx-auto justify-items-center">
         {languages.map((lang, index) => (
           <div
             key={index}
-            className="group flex flex-col items-center justify-center p-6 w-[250px] min-h-[130px] rounded-xl 
+            className="group flex flex-col items-center justify-center p-6 w-[280px] min-h-[100px] rounded-xl 
               border border-black/20 dark:border-white/20
               hover:border-cyan-400 hover:shadow-cyan-400 hover:shadow-md 
               hover:-translate-y-1 hover:scale-105 
