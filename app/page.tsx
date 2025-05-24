@@ -24,6 +24,7 @@ export default function Home() {
 
       {/* A Vertical line or divider separating sections on the page. */}
       <SectionDivider />
+      
 
       {/* The About component provides information about the author or user. */}
       <About />

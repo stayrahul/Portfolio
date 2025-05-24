@@ -4,9 +4,9 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Sanidhya",
-  "short_name": "Sanidhya",
-  "description": "Sanidhya is a full-stack developer with 4 years of experience.",
+  "name": "stayrahula",
+  "short_name": "stayrahula",
+  "description": "stayrahula is a full-stack developer with 4 years of experience.",
   "icons": [
     {
       "src": "icons/icon-192x192.png",

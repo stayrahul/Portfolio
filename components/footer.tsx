@@ -11,7 +11,7 @@ const Footer = () => {
 
       <small className="mb-2 block text-md">
         {/* Display the copyright notice with dynamic years and owner name. */}
-        &copy; {new Date().getFullYear()} <b>{OWNER_NAME.split(" ")[0]}♡Pidii</b> |
+        &copy; {new Date().getFullYear()} <b>{OWNER_NAME.split(" ")[0]}</b> |
         All rights reserved |{" "}
         <Link
            href="tel:+9779822228722"

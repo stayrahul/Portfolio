@@ -2,7 +2,7 @@ import React from 'react';
 
 const ThankYouSection: React.FC = () => {
   return (
-    <section id="thank-you" className="py-12 bg-transparent">
+    <section id="thank-you" className="py-8 bg-transparent">
       <h1 className="text-center text-3xl font-semibold text-black dark:text-white mb-4">
         Thank You <span className="text-yellow-500 dark:text-yellow-400">for Visiting! 🫰</span>
       </h1>
